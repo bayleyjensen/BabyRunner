@@ -28,6 +28,8 @@ namespace ConsoleAdventure.Project.Models
 
       Item Squeaker = new Item("Squeaker", "Useful for making noise but will alert any dogs near");
 
+      Item Cookie = new Item("Cookie", "Hooray you WON!!!");
+
       //Players
       Player Me = new Player("");
       CurrentPlayer = Me;
@@ -42,6 +44,10 @@ namespace ConsoleAdventure.Project.Models
       LivingRoom.AddExit(ParentsRoom, "west");
       LivingRoom.AddExit(Kitchen, "east");
       Kitchen.AddExit(LivingRoom, "west");
+
+      BabyRoom.Items.Add(Slippers);
+      ParentsRoom.Items.Add(MysteryTool);
+      LivingRoom.Items.Add(Squeaker);
     }
     public Game()
     {

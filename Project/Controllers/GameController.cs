@@ -19,9 +19,14 @@ namespace ConsoleAdventure.Project.Controllers
       Console.Beep();
       System.Console.WriteLine("WELCOME TO THE BABYRUNNER!");
       System.Console.WriteLine(""); //LINEBREAK
+      System.Console.WriteLine("Welcome before we begin what is your name playa");
+      string name = System.Console.ReadLine();
+      System.Console.WriteLine($"alrigh {name} lets get to it and do it");
+      _gameService.Setup(name);
       _gameService.Start();
       while (_running)
       {
+        System.Console.WriteLine("Type 'Help' for a list of commands");
         Print();
         System.Console.WriteLine("");//LINEBREAK
         GetUserInput();
@@ -54,6 +59,15 @@ namespace ConsoleAdventure.Project.Controllers
           break;
         case "reset":
           _gameService.Reset();
+          break;
+        case "take":
+          _gameService.TakeItem(option);
+          break;
+        case "inventory":
+          _gameService.Inventory();
+          break;
+        case "use":
+          _gameService.UseItem(option);
           break;
         default:
           System.Console.WriteLine("INVALID INPUT");
