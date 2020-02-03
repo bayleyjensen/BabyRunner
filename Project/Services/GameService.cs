@@ -94,9 +94,11 @@ namespace ConsoleAdventure.Project
       {
         Messages.Add("You are now a slippery snake");
       }
-      else if (itemName.ToLower() == "mystery item")
+      else if (itemName.ToLower() == "mystery tool" && _game.CurrentRoom.Name == "Kitchen")
       {
-        Messages.Add("Way to go this is the only way to win");
+        System.Console.WriteLine("you made it on the counter you can now get the cookie");
+        System.Console.WriteLine("Look for the Cookie!");
+        _game.CurrentRoom.Description = "Everything looks different from the counter... Look over there THATS THE COOKIE JAR!!! GO TAKE your prize and taste its sweet nector";
       }
       else if (itemName.ToLower() == "squeaker")
       {

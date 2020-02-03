@@ -48,6 +48,7 @@ namespace ConsoleAdventure.Project.Models
       BabyRoom.Items.Add(Slippers);
       ParentsRoom.Items.Add(MysteryTool);
       LivingRoom.Items.Add(Squeaker);
+      Kitchen.Items.Add(Cookie);
     }
     public Game()
     {
