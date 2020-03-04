@@ -20,7 +20,7 @@ namespace ConsoleAdventure.Project.Models
 
       Room Kitchen = new Room("Kitchen", "You have made it to the kitchen, eyes set on the cookie jar... However the cookie jar is on the counter and you are not tall enough to reach it.");
 
-      Room Dungun = new Room("Dungun", "down Here you will find your deepest fears")
+      Room Dungun = new Room("Dungun", "down Here you will find your deepest fears");
 
       CurrentRoom = BabyRoom;
       //Items
@@ -46,7 +46,7 @@ namespace ConsoleAdventure.Project.Models
       LivingRoom.AddExit(ParentsRoom, "west");
       LivingRoom.AddExit(Kitchen, "east");
       Kitchen.AddExit(LivingRoom, "west");
-      LivingRoom.AddExit(Dungun, "east");
+      LivingRoom.AddExit(Dungun, "south");
 
       BabyRoom.Items.Add(Slippers);
       ParentsRoom.Items.Add(MysteryTool);
