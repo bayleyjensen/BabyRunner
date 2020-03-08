@@ -47,7 +47,6 @@ namespace ConsoleAdventure.Project.Models
       LivingRoom.AddExit(Kitchen, "east");
       Kitchen.AddExit(LivingRoom, "west");
       LivingRoom.AddExit(Dungun, "south");
-      // LivingRoom.AddExit(Dungun, "south");
 
       BabyRoom.Items.Add(Slippers);
       ParentsRoom.Items.Add(MysteryTool);
