@@ -35,6 +35,7 @@ namespace ConsoleAdventure.Project.Models
       //Players
       Player Me = new Player("");
       CurrentPlayer = Me;
+      // CurrentPlayer = Me;
 
 
 
